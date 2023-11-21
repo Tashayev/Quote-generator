@@ -1,17 +1,17 @@
 :root {
   --color: #000;
   --transition-duration: 1.5s;
-
-
 }
-body{
+
+body {
   margin: 0;
 }
-*{
 
+* {
   font-family: 'Raleway', sans-serif;
 }
-.app{
+
+.app {
   background-color: var(--color);
   transition: var(--transition-duration);
   width: 100vw;
@@ -22,64 +22,67 @@ body{
   flex-direction: column;
 }
 
-.container{
+.container {
+  max-width: 100%;
   padding: 30px;
   background: #fff;
-  width: 500px;
   border-radius: 5px;
   color: var(--color);
   transition: var(--transition-duration);
   font-family: 'Raleway', sans-serif;
   font-size: 1.75em;
 }
-.buttons{
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 500px;
+  }
+}
+
+.buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: none;
-
 }
-.btn{
+
+.btn {
   background: var(--color);
   color: #fff;
   transition: var(--transition-duration);
   margin: 0;
   height: 40px;
   font-size: 15px;
-
-}
-button {
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.quote-btn{
+.quote-btn {
   padding: 0 15px;
 }
 
- button:hover{
+button:hover {
   border: none;
- }
-.twitter, .tumblr{
+}
+
+.twitter,
+.tumblr {
   padding: 0;
   margin-right: 5px;
   width: 40px;
-
-
 }
 
-
-
-h5, h4{
+h5,
+h4 {
   font-weight: 400;
-
-}
-h4{
-  color:#fff;
-
 }
 
-.author{
+h4 {
+  color: #fff;
+}
+
+.author {
   font-size: 0.60em;
   text-align: end;
 }
